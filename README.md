@@ -1,3 +1,4 @@
+
 # ATM Console-Based Application (TypeScript)
 
 ## Description
@@ -34,3 +35,62 @@ This project is built using the `inquirer` package for interactive prompts in th
 
    ```bash
    npm install
+   ```
+
+4. Compile the TypeScript code to JavaScript:
+
+   ```bash
+   tsc
+   ```
+
+5. Run the application:
+
+   ```bash
+   node dist/index.js
+   ```
+
+## Usage
+
+1. When you run the application, you will be prompted to enter your PIN.
+2. If the correct PIN is entered, you can choose one of the following options:
+   - **Withdraw**: Withdraw money either through predefined fast cash options or by entering a custom amount.
+   - **Deposit**: Deposit money into the account.
+   - **Get Balance**: Check your account balance.
+   - **Change Pin**: Change your current PIN.
+
+3. If the wrong PIN is entered, an error message will be displayed.
+
+### Sample Interaction:
+
+```text
+Please Enter your Pincode: 1234
+
+What do you want to do?
+- Withdraw
+- Deposit
+- Get Balance
+- Change Pin
+
+You have selected: Withdraw
+
+How much do you want to withdraw?
+- Fast Cash
+- Other Amount
+
+You have selected: Fast Cash
+
+What do you want to do?
+- 1000
+- 5000
+- 10000
+- 15000
+- 20000
+
+You have selected: 5000
+You have withdrawn 5000$
+The amount remaining in your account is 161836$
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
