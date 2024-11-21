@@ -1,7 +1,7 @@
 import inquirer from "inquirer";
 // Defining Balance at First
 const balance = 166836;
-let pinCode = 1250;
+let pinCode = 1234;
 
 // Declaring Varaible for ATM Options
 const widthdraw = "Withdraw";
